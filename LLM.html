@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="LLM.css">
+    <link rel = 'stylesheet' href="Oikko.css">
+    <title> Oikko's LLM </title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class = "scroll-box">
+                <div class = "header-box">
+                    <box id = "bighomebox">
+                    <button id = "home">
+                        <a href = "./index.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </button>
+                </box>
+                    
+                    <button id = "ai-button">
+                        <a href = "./LLM.html">
+                            <i class="fa-solid fa-robot"></i>
+                        </a>
+                    </button>
+                    <button id = "projectfile">
+                        <a href="./Projects.html"> 
+                            <i class="fa-solid fa-laptop-code"></i>
+                         </a>
+                        </button>
+                        <button id = "articlesfile">
+                            <a href="./articles.html">
+                                <i class = "fa-solid fa-book"></i>
+                            </a>
+                        </button>
+                </div> 
+                </div>
+            
+        </div>
+
+        <div class="info">
+            <h1 class = "hiaiim"> Hello! I'm  </h1>
+            <span class = "nameai"> Oikko's Assistant </span>
+
+        </div>
+
+        <div class="chat-container">
+            <div id="chat-log"></div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Send Message">
+            <button id="send-button">
+                <i class="fa-solid fa-bolt" id="button-icon"></i>
+            </button>
+            <span class = "status-indicator"></span>
+        </div>
+
+        <audio id = "audio-output" style="display: none"></audio>
+
+    </div>
+    <div id = "speech-status" style="display: none;"></div>
+
+
+    <script src="LLM.js"></script>
+</body>
+
+</html>
